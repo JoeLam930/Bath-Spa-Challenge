@@ -5,73 +5,165 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
   <title>Frontend Mentor | Time tracking dashboard</title>
-
+  <script defer src="tailwind.config.js"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
+<body class="sm:h-screen bg-blue-900 text-white broder-box">
+<!--container-->
+<div class="sm:w-4/5 sm:h-3/5 sm:content-between w-4/5 mx-auto flex flex-wrap justify-center">
+  <div class="sm:w-1/5 sm:h-5/6 w-4/5 h-52 rounded-2xl bg-blue-600 m-5 relative">
+  <div class="sm:justify-start sm:pl-5 flex flex-wrap w-full h-2/3 rounded-2xl bg-purple-600 flex justify-center items-center">
+  <img src="images/image-jeremy.png" class="w-20 h-20 m-1 border-solid rounded-full border-4 border-light-blue-500"></img>
+  <div class=""><p>Report for</p>
+  <span class="text-2xl">Jeremy Robson</span></div>
+  </div>
+  <!--userInfoButton-->
+  <div class="sm:flex-col sm:pl-5 flex flex-wrap justify-around absolute inset-x-0 bottom-6">
+  <div>Daily</div>
+  <div>Weekly</div>
+  <div>Monthly</div>
+  </div>
+  </div>
+  <!--userWork-->
+  <div class="flex flex-wrap w-3/4">
+  <div class="sm:w-1/4 sm:mb-0 rounded-2xl w-full h-48 bg-yellow-500 m-5 z-0 relative">
+  <img src="images/icon-work.svg" class="absolute top-0 right-0">
+  <div class="rounded-2xl w-full h-3/4 bg-blue-600 p-5 z-10 absolute inset-x-0 bottom-0">
   
+  
+  <div class="flex flex-row justify-between items-end">
+  <div class="h1">Work</div>
+  <div class="text-5xl">...</div>
+  </div>
+  <div class="flex flex-wrap justify-between items-end">
+  <div class="text-4xl">5hrs</div>
+  <div class="">Previous - 7hrs</div> <!-- daily -->
+  </div>
+    
+  </div>
+  </div>
+  <div class="sm:w-1/4 sm:mb-0 rounded-2xl w-4/5 h-48 bg-green-800 m-5 z-0 relative">
+    <img src="images/icon-play.svg" class="absolute top-0 right-0">
+    <div class="rounded-2xl w-full h-3/4 bg-blue-600 p-5 z-10 absolute inset-x-0 bottom-0">
+    
+    
+    <div class="flex flex-row justify-between items-end">
+    <div class="h1">Play</div>
+    <div class="text-5xl">...</div>
+    <!-- daily -->
+    </div>
+    <div class="flex flex-wrap justify-between items-end">
+    <div class="text-4xl">5hrs</div>
+    <div class="">Previous - 7hrs</div> <!-- daily -->
+    </div>
+    
+    <!-- <div class="text-sm">32hrs</div> weekly -->
+    <!-- <div class="text-sm">Previous - 36hrs</div> weekly -->
+    <!-- <div class="text-sm">103hrs</div> monthly -->
+    <!-- <div class="text-sm">Previous - 128hrs</div> monthly -->
+    
+    </div>
+    </div>
+    <div class="sm:w-1/4 sm:mb-0 rounded-2xl w-4/5 h-48 bg-green-800 m-5 z-0 relative">
+      <img src="images/icon-study.svg" class="absolute top-0 right-0">
+      <div class="rounded-2xl w-full h-3/4 bg-blue-600 p-5 z-10 absolute inset-x-0 bottom-0">
+      
+      
+      <div class="flex flex-row justify-between items-end">
+      <div class="h1">Study</div>
+      <div class="text-5xl">...</div>
+      <!-- daily -->
+      </div>
+      <div class="flex flex-wrap justify-between items-end">
+      <div class="text-4xl">5hrs</div>
+      <div class="">Previous - 7hrs</div> <!-- daily -->
+      </div>
+      
+      <!-- <div class="text-sm">32hrs</div> weekly -->
+      <!-- <div class="text-sm">Previous - 36hrs</div> weekly -->
+      <!-- <div class="text-sm">103hrs</div> monthly -->
+      <!-- <div class="text-sm">Previous - 128hrs</div> monthly -->
+      
+      </div>
+      </div>
+      <div class="sm:w-1/4 rounded-2xl w-4/5 h-48 bg-green-800 m-5 z-0 relative">
+        <img src="images/icon-study.svg" class="absolute top-0 right-0">
+        <div class="rounded-2xl w-full h-3/4 bg-blue-600 p-5 z-10 absolute inset-x-0 bottom-0">
+        
+        
+        <div class="flex flex-row justify-between items-end">
+        <div class="h1">Study</div>
+        <div class="text-5xl">...</div>
+        <!-- daily -->
+        </div>
+        <div class="flex flex-wrap justify-between items-end">
+        <div class="text-4xl">5hrs</div>
+        <div class="">Previous - 7hrs</div> <!-- daily -->
+        </div>
+        
+        <!-- <div class="text-sm">32hrs</div> weekly -->
+        <!-- <div class="text-sm">Previous - 36hrs</div> weekly -->
+        <!-- <div class="text-sm">103hrs</div> monthly -->
+        <!-- <div class="text-sm">Previous - 128hrs</div> monthly -->
+        
+        </div>
+        </div>
+
+        <div class="sm:w-1/4 rounded-2xl w-4/5 h-48 bg-green-800 m-5 z-0 relative">
+          <img src="images/icon-study.svg" class="absolute top-0 right-0">
+          <div class="rounded-2xl w-full h-3/4 bg-blue-600 p-5 z-10 absolute inset-x-0 bottom-0">
+          
+          
+          <div class="flex flex-row justify-between items-end">
+          <div class="h1">Study</div>
+          <div class="text-5xl">...</div>
+          <!-- daily -->
+          </div>
+          <div class="flex flex-wrap justify-between items-end">
+          <div class="text-4xl">5hrs</div>
+          <div class="">Previous - 7hrs</div> <!-- daily -->
+          </div>
+          
+          <!-- <div class="text-sm">32hrs</div> weekly -->
+          <!-- <div class="text-sm">Previous - 36hrs</div> weekly -->
+          <!-- <div class="text-sm">103hrs</div> monthly -->
+          <!-- <div class="text-sm">Previous - 128hrs</div> monthly -->
+          
+          </div>
+          </div>
+
+          <div class="sm:w-1/4 rounded-2xl w-4/5 h-48 bg-green-800 m-5 z-0 relative">
+            <img src="images/icon-study.svg" class="absolute top-0 right-0">
+            <div class="rounded-2xl w-full h-3/4 bg-blue-600 p-5 z-10 absolute inset-x-0 bottom-0">
+            
+            
+            <div class="flex flex-row justify-between items-end">
+            <div class="h1">Study</div>
+            <div class="text-5xl">...</div>
+            <!-- daily -->
+            </div>
+            <div class="flex flex-wrap justify-between items-end">
+            <div class="text-4xl">5hrs</div>
+            <div class="">Previous - 7hrs</div> <!-- daily -->
+            </div>
+            
+            <!-- <div class="text-sm">32hrs</div> weekly -->
+            <!-- <div class="text-sm">Previous - 36hrs</div> weekly -->
+            <!-- <div class="text-sm">103hrs</div> monthly -->
+            <!-- <div class="text-sm">Previous - 128hrs</div> monthly -->
+            
+            </div>
+            </div>    
+      
+    </div>
+  
+</div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
